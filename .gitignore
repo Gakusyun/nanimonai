@@ -100,6 +100,7 @@ StyleCopReport.xml
 *.class
 *.com
 *.exe
+*.bin
 
 # Chutzpah Test files
 _Chutzpah*
