@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello world</title>
+    <script>
+        function genshin() {
+            x = document.getElementById("demo");
+            if (x.innerHTML == "原神") {
+                x.innerHTML = "启动";
+            } else {
+                x.innerHTML = "原神";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p id="demo" onmouseover="genshin()" onmouseout="genshin()">原神</p>
+    <input type="button" onclick="genshin()" value="准备好了吗孩子们">
+</body>
+
+</html>
