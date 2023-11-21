@@ -3,6 +3,6 @@ public class exp2_8 {
         short s = 3;
         int i = 5;
         s += i;
-        System.out.println("s="+s);
+        System.out.println("s=" + s);
     }
 }

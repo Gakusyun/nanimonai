@@ -1,7 +1,7 @@
 public class Work_1 {
     public static void main(String[] args) {
         int a[] = new int[10];
-        int i,max,min;
+        int i, max, min;
         for (i = 0; i < 10; i++)
             a[i] = (int) (Math.random() * 100);
         max = 0;

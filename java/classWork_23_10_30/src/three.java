@@ -1,5 +1,5 @@
-class Father{
-    void speak(){
+class Father {
+    void speak() {
         System.out.println("I am a father");
     }
 

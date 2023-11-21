@@ -14,12 +14,13 @@ class BaseClass {
         return hostName;
     }
 }
+
 class DerivedClass extends BaseClass {
     DerivedClass(String s) {
 
-        
     }
 }
+
 public class Test2 {
     public static void main(String[] args) {
         DerivedClass d = new DerivedClass("Tom!");

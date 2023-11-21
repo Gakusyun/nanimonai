@@ -6,6 +6,7 @@ class son {
     }
 
 }
+
 public class two {
     public static void main(String[] args) {
         Object o = new son();

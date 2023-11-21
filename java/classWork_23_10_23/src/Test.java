@@ -10,13 +10,15 @@ class BaseClass {
         return hostName;
     }
 }
+
 class DerivedClass extends BaseClass {
     DerivedClass() {
-        super();//错的
+        super();// 错的
         super.hostName = "Bob";
-        
+
     }
 }
+
 public class Test {
     public static void main(String[] args) {
         DerivedClass d = new DerivedClass();

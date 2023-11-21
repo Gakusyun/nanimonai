@@ -18,6 +18,6 @@ public class Test {
             theVector.addElement(val);
         }
         for (int k = 0; k < theVector.size(); k++)
-            System.out.println(((point)theVector.elementAt(k)).y);
+            System.out.println(((point) theVector.elementAt(k)).y);
     }
 }

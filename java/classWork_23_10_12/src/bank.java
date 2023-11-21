@@ -10,7 +10,6 @@ class BankAccount {
         leftmoney -= money;
         return 1;
     }
-    
 
     public void savemoney(double money) { // 存款
         leftmoney += money;
