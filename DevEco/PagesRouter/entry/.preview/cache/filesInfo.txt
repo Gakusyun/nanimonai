@@ -1,5 +1,0 @@
-D:/nanimonai/DevEco/PagesRouter/entry/.preview/cache/entry/src/main/ets/entryability/EntryAbility.js;com.example.pagesrouter/entry/ets/entryability/EntryAbility;esm;entry/src/main/ets/entryability/EntryAbility.ets;entry
-D:/nanimonai/DevEco/PagesRouter/entry/.preview/cache/entry/src/main/ets/pages/SecondPage.js;com.example.pagesrouter/entry/ets/pages/SecondPage;esm;entry/src/main/ets/pages/SecondPage.ets;entry
-D:/nanimonai/DevEco/PagesRouter/entry/.preview/cache/entry/src/main/ets/pages/IndexPage.js;com.example.pagesrouter/entry/ets/pages/IndexPage;esm;entry/src/main/ets/pages/IndexPage.ets;entry
-D:/nanimonai/DevEco/PagesRouter/entry/.preview/cache/entry/src/main/ets/common/utils/Logger.js;com.example.pagesrouter/entry/ets/common/utils/Logger;esm;entry/src/main/ets/common/utils/Logger.ets;entry
-D:/nanimonai/DevEco/PagesRouter/entry/.preview/cache/entry/src/main/ets/common/constants/CommonConstants.js;com.example.pagesrouter/entry/ets/common/constants/CommonConstants;esm;entry/src/main/ets/common/constants/CommonConstants.ets;entry
