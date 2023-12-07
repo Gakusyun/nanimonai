@@ -135,7 +135,7 @@ void Leafnum(BT *T) /*求二叉树叶子结点数*/
     }
 }
 
-void Nodenum(BT *T)
+void Nodenum(BT *T) /*求二叉树的结点总数*/
 {
     if (T) /*若树不为空*/
     {

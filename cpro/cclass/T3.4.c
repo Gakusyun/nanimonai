@@ -1,11 +1,11 @@
-#include <stdio.h> //22401330125é«˜å­¦éª
+#include <stdio.h>
 void main()
 {
     int num;
     scanf("%d", &num);
     if (num % 2 == 0)
         if (num % 3 == 0)
-            printf("ÊÇ");
+            printf("æ˜¯");
         else
-            printf("·ñ");
+            printf("å¦");
 }

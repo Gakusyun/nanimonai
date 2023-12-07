@@ -1,25 +1,21 @@
 #include <stdio.h>
-void main()
+
+void swap(int *a, int *b)
 {
-    int a, b, c, temp;
+    *a = *a ^ *b;
+    *b = *a ^ *b;
+    *a = *a ^ *b;
+}
+
+int main()
+{
+    int a, b, c;
     scanf("%d %d %d", &a, &b, &c);
     if (a < b)
-    {
-        a = temp;
-        a = b;
-        b = temp;
-    }
+        swap(&a, &b);
     if (b < c)
-    {
-        b = temp;
-        b = c;
-        c = temp;
-    }
+        swap(&b, &c);
     if (a < b)
-    {
-        a = temp;
-        a = b;
-        b = temp;
-    }
+        swap(&a, &b);
     printf("%d,%d,%d", a, b, c);
 }
