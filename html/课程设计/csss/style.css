@@ -1,0 +1,84 @@
+/* 网页头部 */
+header {
+    background-image: url("../image/bgimg.png");
+    text-align: right;
+    padding: 60px;
+}
+
+/* 导航栏 */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* 网页主体部分 */
+main {
+    margin: 15px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+/* 网页底部 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+}
+
+.root {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(71, 69, 69);
+    position: absolute;
+}
+
+.left {
+    width: 30%;
+    height: 90%;
+    padding: 0%;
+    position: absolute;
+    left: 10px;
+    background-color: rgb(149, 146, 146);
+}
+
+.right {
+    width: 65%;
+    height: 90%;
+    position: absolute;
+    right: 10px;
+    background-color: #ffffff;
+}
+
+.bottom {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    background-color: #000000;
+}
