@@ -1,0 +1,211 @@
+/* nav */
+header {
+  width: 100%;
+  height: 43px;
+  background: -webkit-gradient(linear, 78% 100%, 78% 41%, from(#89CFF3), to(#A0E9FF));
+  box-shadow: #00A9FF 2px 2px 3px
+}
+
+header nav {
+  margin: 0 auto;
+  width: 980px;
+  text-align: center
+}
+
+header nav ul li {
+  line-height: 43px;
+  display: block
+}
+
+header nav ul li a {
+  color: #484848;
+  float: left;
+  padding: 0 20px;
+  margin-right: 2px;
+}
+
+.root {
+  width: 100%;
+  height: 90%;
+  background-color: #fff;
+  position: absolute;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(circle, #89CFF3, #A0E9FF);
+  clear: both;
+  position: relative;
+}
+
+.root2 {
+  width: 100%;
+  height: 90%;
+  background-color: #fff;
+  position: absolute;
+  margin: auto;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  clear: both;
+  position: relative;
+  background-image: radial-gradient(circle, #89CFF3, #A0E9FF);
+}
+
+.left {
+  float: left;
+  width: 30%;
+  height: 90%;
+  padding: 10px;
+  position: absolute;
+  left: 3%;
+
+  clear: both;
+}
+
+.right {
+  float: right;
+  width: 63%;
+  height: 90%;
+  position: absolute;
+  right: 3%;
+
+  padding-right: 20px;
+  clear: both;
+}
+
+.introduction {
+  width: 90%;
+  height: 90%;
+  background-color: #CDF5FD;
+  clear: both;
+}
+
+.font1 {
+  font-family: "宋体";
+}
+
+.p1 {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.p2 {
+  font-size: 22px;
+}
+
+.p3 {
+  font-size: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.img {
+  height: 25%;
+  float: left;
+  padding-left: 15px;
+}
+
+.cap {
+  font-size: 40px;
+  font-family: "楷体";
+}
+
+.tle1 {
+  background-color: #00A9FF;
+  text-align: center;
+  font-size: 20px;
+}
+
+.tle2 {
+  background-color: #A0E9FF;
+  font-family: "楷体";
+}
+
+.news {
+  /* float: left; */
+  width: 92%;
+  height: 90%;
+  padding: 10px;
+  position: absolute;
+  left: 3%;
+  background-color: #CDF5FD;
+  clear: both;
+}
+
+.newfont {
+  font-size: 12px;
+  font-family: "楷体";
+  color: #fff;
+}
+
+/* footer */
+footer {
+  border-top: 9px solid #5998c4;
+  background: #242221;
+  width: 100%;
+  position: sticky;
+}
+
+.Copyright {
+  text-align: center;
+  color: #959595;
+  margin: 10px 0 0
+}
+
+.Copyright ul a {
+  color: #5998c4;
+  display: inline;
+  padding: 0 10px;
+}
+
+.Copyright ul a:nth-child(-n+3) {
+  border-right: #999 1px solid
+}
+
+.Copyright ul a:hover {
+  color: #48ebaa;
+}
+
+#loginArea {
+  width: 260px;
+  font-size: 12px;
+}
+
+#loginArea p {
+  margin: 0 0 3px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  float: left;
+  width: 100px;
+  text-align: left;
+  margin-right: 2px;
+  padding: 2px 0;
+}
+
+input {
+  display: block;
+  float: left;
+  width: 150px;
+  margin: 2px;
+}
+
+input.button {
+  width: 60px;
+  margin-right: 5px
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}

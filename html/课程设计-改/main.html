@@ -1,0 +1,114 @@
+<html>
+
+<head>
+  <title>学校网站</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <script src="./js/ima.js"></script>
+</head>
+
+<body>
+  <table width="600" align="left">
+    <tr>
+      <th> </th>
+      <td>
+        <p class="p2"><br><br>武昌工学院</p>
+      </td>
+    </tr>
+  </table>
+  <br><br>
+  <header>
+    <nav id="nav">
+      <ul>
+        <li><a href="./main.html" target="_self">网站首页</a></li>
+        <li><a href="./other_pages/introduction.html" target="_self">学校简介</a></li>
+        <li><a href="./other_pages/images.html" target="_self">学校美图</a></li>
+        <li><a href="./other_pages/college.html" target="_self">学校院系</a></li>
+        <li><a href="./other_pages/news.html" target="_self">新闻</a></li>
+        <li><a href="./other_pages/signup.html" target="_self">注册</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="root">
+    <br><br>
+    <div class="news">
+      <div class="left">
+        <center><b>关于2023年迎新期间实行校园机动车停放管制的通知</b></center>
+        <h5 class="p1">校内各单位：</h5>
+        <p class="p1">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据学校2023年迎新工作安排，新生、家长及车辆需从南门进入校园，由白沙二路、校北门离校。为加强校园交通管理，切实保障迎新工作安全有序地进行，保卫处于9月9日、10日对校内机动车停放实施管制，现将相关事项通知如下：
+        </p>
+        <ol type="1">
+          <li>迎新期间倡导教职工绿色出行，乘坐校车、地铁、网约车等公共交通工具上下班。每天17点30分前，校内办事以绿色出行为主，不得动用机动车。（救护车等应急抢险车辆、垃圾清运车辆除外）。</li>
+          <li>校内各单位、教工小区、湖北二师居民区不得安排与迎新工作无关的来访人员及车辆进校（含装修搬家车辆）。</li>
+          <li>施工单位车辆进校授权已到期，迎新期间与新生报到入学住宿、家具电器维修相关售后维保人员，每公司限一台经批准方可进校。</li>
+          <li>
+            迎新期间，校园教学、办公、实验楼、运动场等地面公共区域停车位作为迎新停车场。南区教职工车辆一律停放到永泽楼、永润楼地下车库和教工小区院内，北区教职工车辆届时请停放到校北门实训中心背后院内（原小学内）或北区攀岩墙背后硬化区。
+          </li>
+          <li>图书馆一楼架空层为迎新联合办公点，图书馆背后及周边道路禁止停车。迎新联合办公点银行、网络维护等外单位迎新车辆停放在体育馆背后车位及路面单侧停放。</li>
+          <li>9月9日、10日，超市、食堂送货车辆尽量安排在7：30以前、17：30以后进校。</li>
+          <li>二食堂、白沙园及南区商铺从业人员代步车辆停放至白沙二路西段；一食堂及北区商铺从业人员代步车辆停放至北区驾校内侧。</li>
+        </ol>
+      </div>
+      <div class="right">
+        <center>
+          <h3>学校美图&nbsp;&nbsp;<a style="font-size: smaller;" href="./other_pages/images.html">更多图片</a></h3>
+          <img id="1" style="width: 80px;height: 80px;" src="./images/2.jpeg" onmouseover="enlargeImage(1)"
+            onmouseout="enDefaultImage(1)">
+          <img id="2" style="width: 80px;height: 80px;" src="./images/3.jpeg" onmouseover="enlargeImage(2)"
+            onmouseout="enDefaultImage(2)">
+          <img id="3" style="width: 80px;height: 80px;" src="./images/4.jpeg" onmouseover="enlargeImage(3)"
+            onmouseout="enDefaultImage(3)">
+          <img id="4" style="width: 80px;height: 80px;" src="./images/5.jpeg" onmouseover="enlargeImage(4)"
+            onmouseout="enDefaultImage(4)"><br>
+          <img id="5" style="width: 80px;height: 80px;" src="./images/6.jpeg" onmouseover="enlargeImage(5)"
+            onmouseout="enDefaultImage(5)">
+          <img id="6" style="width: 80px;height: 80px;" src="./images/7.jpeg" onmouseover="enlargeImage(6)"
+            onmouseout="enDefaultImage(6)">
+          <img id="7" style="width: 80px;height: 80px;" src="./images/8.jpeg" onmouseover="enlargeImage(7)"
+            onmouseout="enDefaultImage(7)">
+          <img id="8" style="width: 80px;height: 80px;" src="./images/9.jpeg" onmouseover="enlargeImage(8)"
+            onmouseout="enDefaultImage(8)">
+          <br><br><br>
+          <form id="loginForm" name="loginForm" onsubmit="return validForm();">
+            <div id="loginArea">
+              <fieldset>
+                <legend>登录</legend>
+                <p>
+                  <label>登录用户名</label>
+                  <input id="userName" name="userName" type="text" tabindex="1" />
+                </p>
+                <p>
+                  <label>登录密码</label>
+                  <input id="pwd" name="pwd" type="password" tabindex="2" />
+                </p>
+                <center>
+                  <p>
+                    <input type="submit" id="btlogin" class="button" value="提交" tabindex="3" />
+                    <input type="button" id="btreset" class="button" value="取消" tabindex="4" />
+                  </p>
+                </center>
+              </fieldset>
+            </div>
+          </form>
+          <h3>学校风采</h3>
+          <iframe src="https://player.bilibili.com/player.html?aid=487833364&bvid=BV13N411Q7ff" scrolling="no"
+            border="0" frameborder="no" framespacing="0" allowfullscreen="true" muted="1"> </iframe>
+          <iframe src="https://player.bilibili.com/player.html?aid=356889408&bvid=BV1xX4y187VV" scrolling="no"
+            border="0" frameborder="no" framespacing="0" allowfullscreen="true" muted="1"> </iframe>
+          <iframe src="https://player.bilibili.com/player.html?aid=427130361&bvid=BV1B3411373M&" scrolling="no"
+            border="0" frameborder="no" framespacing="0" allowfullscreen="true" muted="1"> </iframe>
+        </center>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="Copyright">
+      <ul>
+        <a href="#">联系我们</a><a href="#">网站首页</a><a href="#">管理后台</a>
+      </ul>
+      <p>版权所有&copy;2201班</p>
+    </div>
+  </footer>
+</body>
+
+</html>

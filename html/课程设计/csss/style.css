@@ -1,6 +1,6 @@
 /* 网页头部 */
 header {
-    background-image: url("../image/bgimg.png");
+    background-image: url("../images/bgimg.png");
     text-align: right;
     padding: 60px;
 }
@@ -42,17 +42,14 @@ main {
 
 /* 网页底部 */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 98%;
+    border-top: 9px solid #5998c4;
+    background: #242221;
+    width: 100%;
+    position: sticky;
 }
 
 .root {
-    width: 100%;
+    width: 98%;
     height: 100%;
     background-color: rgb(71, 69, 69);
     position: absolute;
@@ -61,7 +58,6 @@ footer {
 .left {
     width: 30%;
     height: 90%;
-    padding: 0%;
     position: absolute;
     left: 10px;
     background-color: rgb(149, 146, 146);
@@ -73,6 +69,10 @@ footer {
     position: absolute;
     right: 10px;
     background-color: #ffffff;
+}
+
+.font1 {
+    font-family: "宋体";
 }
 
 .bottom {

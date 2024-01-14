@@ -1,0 +1,127 @@
+<html>
+
+<head>
+  <title>注册</title>
+  <link href="../css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="../js/signup.js"></script>
+  <script type="text/javascript">
+    function validForm() {
+      var userName = document.getElementById("userName");
+      var pwd = document.getElementById("pwd");
+      var repwd = document.getElementById("repwd");
+      var email = document.getElementById("email");
+      if (!validate_required(userName)) {
+        alert("请输入登录使用的用户名！");
+        document.getElementById("userName").focus();
+        return false;
+      }
+      if (!validate_required(pwd)) {
+        alert("请输入登录使用的密码！");
+        document.getElementById("pwd").focus();
+        return false;
+      }
+      if (!validate_required(repwd)) {
+        alert("请输入重复密码！");
+        document.getElementById("repwd").focus();
+        return false;
+      }
+      if (!validate_required(email)) {
+        alert("请输入邮箱地址！");
+        document.getElementById("email").focus();
+        return false;
+      }
+
+      if (!valid_character(userName.value.charAt(0))) {
+        alert("登录用户名的首字符不能使数字！");
+        document.getElementById("userName").focus();
+        return false;
+      }
+      if (!valid_length(userName.value, 6, 20)) {
+        alert("登录用户名的长度应当在6和20个字符(含)之间！");
+        document.getElementById("userName").focus();
+        return false;
+      }
+      if (!valid_string_equal(pwd.value, repwd.value)) {
+        alert("两次输入的密码必须保持一致！");
+        document.getElementById("pwd").focus();
+        return false;
+      }
+
+      if (!validate_email(email.value)) {
+        alert("请输入合法的邮箱地址，如aa@yahoo.com！");
+        document.getElementById("email").focus();
+        return false;
+      }
+
+      alert("验证通过");
+      return true;
+    }
+  </script>
+</head>
+
+<body onload="centerObject('loginArea')">
+  <table width="600" align="left">
+    <tr>
+      <th> </th>
+      <td>
+        <p class="p2"><br><br>武昌工学院</p>
+      </td>
+    </tr>
+  </table>
+  <br><br>
+  <header>
+    <nav id="nav">
+      <ul>
+        <li><a href="../main.html" target="_self">网站首页</a></li>
+        <li><a href="./introduction.html" target="_self">学校简介</a></li>
+        <li><a href="./images.html" target="_self">学校美图</a></li>
+        <li><a href="./college.html" target="_self">学校院系</a></li>
+        <li><a href="./news.html" target="_self">新闻</a></li>
+        <li><a href="./signup.html" target="_self">注册</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="root">
+    <center>
+      <form id="loginForm" name="loginForm" onsubmit="return validForm();">
+        <div id="loginArea">
+          <fieldset>
+            <legend>用户注册</legend>
+            <p>
+              <label>登录用户名</label>
+              <input id="userName" name="userName" type="text" tabindex="1" />
+            </p>
+            <p>
+              <label>登录密码</label>
+              <input id="pwd" name="pwd" type="password" tabindex="2" />
+            </p>
+            <p>
+              <label>重复输入密码</label>
+              <input id="repwd" name="repwd" type="password" tabindex="3" />
+            </p>
+            <p>
+              <label>有效邮箱地址</label>
+              <input id="email" name="email" type="text" tabindex="4" />
+            </p>
+            <center>
+              <p>
+                <input type="submit" id="btlogin" class="button" value="提交" tabindex="3" />
+                <input type="button" id="btreset" class="button" value="取消" tabindex="4" />
+              </p>
+            </center>
+          </fieldset>
+        </div>
+      </form>
+    </center>
+  </div>
+  <footer>
+    <div class="Copyright">
+      <ul>
+        <a href="#">联系我们</a><a href="#">网站首页</a><a href="#">管理后台</a>
+      </ul>
+      <p>版权所有&copy;2201班</p>
+    </div>
+  </footer>
+</body>
+
+</html>

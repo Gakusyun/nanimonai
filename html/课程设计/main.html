@@ -9,39 +9,93 @@
 </head>
 
 <body>
-    <!-- 网页头部 -->
-    <header>
-        <h1 style="color: #ff0000;">厚德 笃学 自强 求新</h1>
-    </header>
+    <div class="root">
+        <!-- 网页头部 -->
+        <header>
+            <h1 style="color: #ff0000;">厚德 笃学 自强 求新</h1>
+        </header>
 
-    <!-- 导航栏 -->
-    <nav>
-        <ul>
-            <li><a href="./main.html">主页</a></li>
-            <li><a href="./other_page/campusPhoto.html">学校美图</a></li>
-            <li><a href="./other_page/yuanxinfo.html">院系设置</a></li>
-            <li><a href="./other_page/libraryinfomation.html">图书信息</a></li>
-            <li><a href="./other_page/signup.html">注册</a></li>
-        </ul>
-    </nav>
+        <!-- 导航栏 -->
+        <nav>
+            <ul>
+                <li><a href="./main.html">主页</a></li>
+                <li><a href="./other_page/campusPhoto.html">学校美图</a></li>
+                <li><a href="./other_page/yuanxinfo.html">院系设置</a></li>
+                <li><a href="./other_page/libraryinfomation.html">图书信息</a></li>
+                <li><a href="./other_page/signup.html">注册</a></li>
+            </ul>
+        </nav>
 
-    <!-- 网页主体部分 -->
-    <main>
-        <!-- 公告栏 -->
-        <section id="公告栏">
-            sdvsdvsdvsdv
-        </section>
+        <!-- 网页主体部分 -->
+        <br><br>
+        <div class="left">
+            <br>
+            <center><b>校内新闻</b></center>
+            <ul type="disc">
+                <li>全国银奖！中国国际大学生创新大赛，武工院勇创佳绩！<br>
+                    <p class="font1">本网讯（通讯员 王杏林）
+                        中国国际大学生创新大赛（2023）由教育部等12个部门会同天津市人民政府主办，天津大学承办。12月3日-6日，全国总决赛在天津大学举行。天津市委书记陈敏尔，教育部党组书记、部长怀进鹏，天津市委副书记、市长张工，教育部党组成员、副部长吴岩等出席相关活动。该项赛事是中国高等教育学会排序第一的赛事，今年共有来自国内外151个国家和地区、5296所学校的421万个项目、1709万人次报名参赛，其中1260个优秀项目脱颖而出参加总决赛现场赛。武昌工学院参赛项目《再生邦——再生资源行业数字化转型开拓者》一举斩获国赛银奖，实现了我校在该赛事上新的突破。
+                    </p>
+                </li>
+                <li>我校学子在第16届全国3D大赛中斩获佳绩<br>
+                    <p class="font1">本网讯（通讯员 单灏彬 田梓新 徐慧
+                        ）近日，从全国3D大赛组委会传来喜讯，武昌工学院学子在2023年全国3D大赛中凭借扎实的专业知识功底与笃思慎行、勇克难题的精神，荣获二等奖3项、三等奖4项的佳绩，同时，武昌工学院荣获大赛优秀组织奖1项。
+                    </p>
+                </li>
+                <li>我校学子在第九届全国大学生物理实验竞赛中喜获佳绩<br>
+                    <p class="font1">本网讯（通讯员 杨萍 陈安林）
+                        近日，由国家级实验教学示范中心联席会物理学科组、全国高等学校实验物理教学研究会、教育部大学物理课程教学指导委员会、大学物理实验专项委员会和中国物理学会物理教学委员会联合主办，重庆大学承办的第九届全国大学生物理实验竞赛（创新）总决赛圆满落下帷幕。我校5支代表队成绩斐然，荣获全国三等奖2项，全国优秀奖3项。同时学校荣获优秀组织奖，获奖数量和质量在湖北省同类高校中位居前列。
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <center>
+                <h3>学校美图&nbsp;&nbsp;<a style="font-size: smaller;" href="./other_pages/campusPhoto.html">更多图片</a></h3>
+                <img style="width: 80px;height: 80px;" src="./images/2.png">
+                <img style="width: 80px;height: 80px;" src="./images/3.jpeg">
+                <img style="width: 80px;height: 80px;" src="./images/4.jpeg">
+                <img style="width: 80px;height: 80px;" src="./images/5.jpeg"><br>
+                <img style="width: 80px;height: 80px;" src="./images/6.jpg">
+                <img style="width: 80px;height: 80px;" src="./images/7.jpg">
+                <img style="width: 80px;height: 80px;" src="./images/8.jpeg">
+                <img style="width: 80px;height: 80px;" src="./images/9.jpeg">
+                <br><br><br>
+                <form id="loginForm" name="loginForm" onsubmit="return validForm();">
+                    <div id="loginArea">
+                        <fieldset>
+                            <legend>登录</legend>
+                            <p>
+                                <label>登录用户名</label>
+                                <input id="userName" name="userName" type="text" tabindex="1" />
+                            </p>
+                            <p>
+                                <label>登录密码</label>
+                                <input id="pwd" name="pwd" type="password" tabindex="2" />
+                            </p>
+                            <center>
+                                <p>
+                                    <input type="submit" id="btlogin" class="button" value="提交" tabindex="3" />
+                                    <input type="button" id="btreset" class="button" value="取消" tabindex="4" />
+                                </p>
+                            </center>
+                        </fieldset>
+                    </div>
+                </form>
+            </center>
+        </div>
+        <!-- 网页底部 -->
+        <footer>
+            <div class="Copyright">
+                <ul>
+                    <a href="#">联系我们</a><a href="#">网站首页</a><a href="#">管理后台</a>
+                </ul>
+                <p>版权所有&copy;2201班</p>
+            </div>
+        </footer>
+    </div>
 
-        <!-- 内容显示区 -->
-        <section id="内容显示区">
-            xvdsvsdvsd、
-        </section>
-    </main>
 
-    <!-- 网页底部 -->
-    <footer>
-        <!-- 在这里添加作者、版权信息、联系方式等 -->
-    </footer>
 </body>
 
 </html>
