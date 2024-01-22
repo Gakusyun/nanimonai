@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/E-Accounts/cmake-build-debug",
-		"source" : "D:/E-Accounts"
+		"build" : "D:/nanimonai/cpro/datastruct/E-Accounts/cmake-build-debug",
+		"source" : "D:/nanimonai/cpro/datastruct/E-Accounts"
 	},
 	"version" : 
 	{
