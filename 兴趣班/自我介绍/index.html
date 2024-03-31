@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自我介绍</title>
+    <script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+</head>
+
+<body>
+    <script>
+        function move() {
+            var ranL = Math.floor(Math.random() * 200);
+            var ranT = Math.floor(Math.random() * 150);
+            if (Math.random() - Math.random() > 0) {
+                var lS = "+=" + ranL + "px";
+                var tS = "+=" + ranT + "px";
+            } else {
+                var lS = "-=" + ranL + "px";
+                var tS = "-=" + ranT + "px";
+            }
+            $("div1").animate({
+                left: tS,
+                top: lS,
+            });
+        }
+        var beClicked = function () {
+            alert("诶哟，你还点到了");
+            alert("行，给你看吧");
+            document.write("<h1>姓名：高学骏</h1><p>爱好：玩 <i>Minecraft</i> ,看 Animation。</p><p style='color: #888888;'>刚开的 <i>Minecraft</i> 服务器，热乎的ip：8.8.8.8:25565 欢迎来玩哦</p><img src='./image/photo.jpg'alt='这里是图片，如果你看到这段话，就说明你看到了这句话'>");
+        };
+    </script>
+    <div1 style="background: #ffffff;height: 100px;width: 200px;position: absolute;left: 400px;top: 250px;"
+        onmouseover="move()">
+        <div style="background: #66ccff;height: 50px;width: 100px;position: absolute;top: 25px;left: 50px;">
+            <center onclick="beClicked()">
+                <p style="height: 18px;line-height: 18px;width: 100px;overflow: hidden;"> 点我查看😋 </p>
+            </center>
+        </div>
+    </div1>
+
+</body>
+
+</html>
