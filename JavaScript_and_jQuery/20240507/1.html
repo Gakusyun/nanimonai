@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>电子时钟</title>
+</head>
+
+<body>
+    <div>
+        <div id="clock"></div>
+        <button id="control" onclick="toggleClock()">停止</button>
+    </div>
+    <script type="text/javascript">
+        var time1;
+        function timeshow() {
+            var Date1 = new Date();
+            var Years = Date1.getFullYear();
+            var Months = Date1.getMonth() + 1;
+            var Day = Date1.getDate();
+            var Hours = Date1.getHours();
+            var Minutes = Date1.getMinutes();
+            var Seconds = Date1.getSeconds();
+            var Week = Date1.getDay();
+            var CharYears = Years + '年';
+            if (Months < 10) { var CharMonths = '0' + Months + '月'; }
+            else { var CharMonths = Months + '月'; }
+            if (Day < 10) { var CharDay = '0' + Day + '日'; }
+            else { var CharDay = Day + '日'; }
+            var Weeks = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+            var CharWeeks = Weeks[Week];
+            if (Hours == 0) { var CharHours = '00'; }
+            else if (Hours < 10) { var CharHours = '0' + Hours; }
+            else { var CharHours = Hours; }
+            if (Minutes == 0) { var CharMinutes = '00'; }
+            else if (Minutes < 10) { var CharMinutes = '0' + Minutes; }
+            else { var CharMinutes = Minutes; }
+            if (Seconds == 0) { var CharSeconds = '00'; }
+            else if (Seconds < 10) { var CharSeconds = '0' + Seconds; }
+            else { var CharSeconds = Seconds; }
+            var CharTime = CharYears + CharMonths + CharDay + CharWeeks + CharHours + ':' + CharMinutes + ':' + CharSeconds;
+            document.getElementById('clock').innerHTML = CharTime;
+        }
+        function toggleClock() {
+            if (time1) {
+                clearInterval(time1);
+                time1 = null;
+                document.getElementById('control').textContent = '开始'; // 更新按钮文本  
+            } else {
+                time1 = window.setInterval(timeshow, 1000);
+                document.getElementById('control').textContent = '停止'; // 更新按钮文本  
+            }
+        }
+        window.onload = function () {
+            timeshow();
+            time1 = window.setInterval(timeshow, 1000);
+            document.getElementById('control').textContent = '停止'; // 初始按钮文本设置为“停止”  
+        };  
+    </script>
+</body>
+
+</html>

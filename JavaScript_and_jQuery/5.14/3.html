@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>双色表格</title>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+	<style type="text/css">
+		thead {
+			width: 98%;
+			border-collapse: collapse;
+			border-spacing: 0 1px;
+			background-color: #B6DF48;
+			border: 1px solid #ccc;
+			text-align: center;
+			padding: 0;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		td {
+			font-size: 12px;
+			padding: 3px;
+		}
+
+		.even {
+			background-color: #E8F3D1;
+		}
+
+		.odd {
+			background-color: #F9FCEF;
+		}
+	</style>
+</head>
+
+<body>
+	<table>
+		<thead>
+			<tr>
+				<td width="11%" height="27">编号</td>
+				<td width="14%">祝福对象</td>
+				<td width="12%">祝福者</td>
+				<td width="33%">字条内容</td>
+				<td width="3%">发送时间</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td height="27">1</td>
+				<td>琦琦</td>
+				<td>妈妈</td>
+				<td>愿你健康快乐的成长!</td>
+				<td>2016-07-05 13:06:06</td>
+			</tr>
+			<tr>
+				<td height="27">2</td>
+				<td>wgh</td>
+				<td>无语</td>
+				<td>每天有份好心情!</td>
+				<td>2016-07-05 13:26:17</td>
+			</tr>
+			<tr>
+				<td height="27">3</td>
+				<td>天净沙小晓</td>
+				<td>wgh</td>
+				<td>煮豆燃豆萁，豆在釜中泣。本是同根生，相煎何太急。</td>
+				<td>2016-07-05 13:36:06</td>
+			</tr>
+			<tr>
+				<td height="27">4</td>
+				<td>明日科技</td>
+				<td>wgh</td>
+				<td>明天会更好!</td>
+				<td>2016-07-05 13:46:06</td>
+			</tr>
+		</tbody>
+	</table>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("tbody tr:even").addClass("odd");
+			$("tbody tr:odd").addClass("even");
+		});
+	</script>
+</body>
+
+</html>

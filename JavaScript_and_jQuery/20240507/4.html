@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>年月日联动</title>
+</head>
+
+<body>
+    <label for="year">年份:</label>
+    <select id="year" onchange="updateMonths()">
+        <!-- 这里将动态添加年份选项 -->
+    </select>
+
+    <label for="month">月份:</label>
+    <select id="month" onchange="updateDays()">
+        <!-- 月份选项将在选择年份后动态更新 -->
+    </select>
+
+    <label for="day">日期:</label>
+    <select id="day">
+        <!-- 日期选项将在选择月份后动态更新 -->
+    </select>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            // 假设我们想要从1990年开始到2050年结束  
+            const startYear = 1990;
+            const endYear = 2050;
+
+            // 填充年份  
+            const yearSelect = document.getElementById('year');
+            for (let year = startYear; year <= endYear; year++) {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearSelect.appendChild(option);
+            }
+
+            // 初始化月份和日期（这里我们假设默认为第一年的第一月的第一天）  
+            updateMonths();
+            updateDays();
+        });
+
+        function updateMonths() {
+            // 清除月份选项  
+            const monthSelect = document.getElementById('month');
+            monthSelect.innerHTML = '';
+
+            // 获取选中的年份  
+            const year = parseInt(document.getElementById('year').value, 10);
+
+            // 填充月份  
+            for (let month = 1; month <= 12; month++) {
+                const option = document.createElement('option');
+                option.value = month;
+                option.textContent = month;
+                monthSelect.appendChild(option);
+            }
+
+            // 选中默认月份（第一个月）  
+            monthSelect.selectedIndex = 0;
+
+            // 更新日期  
+            updateDays();
+        }
+
+        function updateDays() {
+            // 清除日期选项  
+            const daySelect = document.getElementById('day');
+            daySelect.innerHTML = '';
+
+            // 获取选中的年份和月份  
+            const year = parseInt(document.getElementById('year').value, 10);
+            const month = parseInt(document.getElementById('month').value, 10);
+
+            // 根据年份和月份获取当月的天数  
+            const daysInMonth = getDaysInMonth(year, month);
+
+            // 填充日期  
+            for (let day = 1; day <= daysInMonth; day++) {
+                const option = document.createElement('option');
+                option.value = day;
+                option.textContent = day;
+                daySelect.appendChild(option);
+            }
+
+            // 选中默认日期（第一天）  
+            daySelect.selectedIndex = 0;
+        }
+
+        // 辅助函数：获取指定年份和月份的天数  
+        function getDaysInMonth(year, month) {
+            return new Date(year, month, 0).getDate();
+        }
+    </script>
+</body>
+
+</html>

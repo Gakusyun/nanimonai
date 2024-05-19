@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>计时器</title>
+    </head>
+    <body>
+        <input type = "text" id = "timer" value = "0">
+        <button onclick="starttimer()">开始计时</button>
+        <button onclick="pausetimer()">停止</button>
+        <script type = "text/javascript">
+            var count = 0;
+            var timerid;
+            function starttimer(){
+                clearInterval(timerid);
+                timerid = setInterval(function(){
+                    count++;
+                    document.getElementById('timer').value = count;
+                },1000);
+            }
+            function pausetimer(){
+                clearInterval(timerid);
+            }
+        </script>
+    </body>
+</html>

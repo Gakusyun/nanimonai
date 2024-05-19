@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>手风琴</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.king {
+			width: 709px;
+			margin: 100px auto;
+			background: url(images/bg.png)no-repeat;
+			overflow: hidden;
+			padding: 10px;
+		}
+
+		.king ul {
+			list-style: none;
+		}
+
+		.king li {
+			position: relative;
+			float: left;
+			width: 69px;
+			height: 69px;
+			margin-right: 10px;
+		}
+
+		.king li.current {
+			width: 224px;
+		}
+
+		.king li.current .big {
+			display: block;
+		}
+
+		.king li.current.small {
+			display: none;
+		}
+
+		.big {
+			width: 224px;
+			height: 69px;
+			display: none;
+			border-radius: 5px;
+		}
+
+		.small {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 69px;
+			height: 69px;
+			border-radius: 5px;
+		}
+
+		.red1 {
+			background: #FF3333;
+		}
+
+		.red2 {
+			background: #CC0000;
+		}
+
+		.orange1 {
+			background:
+				#FFBB66;
+		}
+
+		.orange2 {
+			background: #FF8800;
+		}
+
+		.yellow1 {
+			background: #FFFFBB;
+		}
+
+		.yellow2 {
+			background: #FFFF77;
+		}
+
+		.green1 {
+			background: #99FF99;
+		}
+
+		.green2 {
+			background: #66FF66;
+		}
+
+		.blue1 {
+			background: #00BBFF;
+		}
+
+		.blue2 {
+			background: #0066FF;
+		}
+
+		.pink1 {
+			background: #FF88C2;
+		}
+
+		.pink2 {
+			background: #FF44AA;
+		}
+
+		.purple1 {
+			background: #E93EFF;
+		}
+
+		.purple2 {
+			background: #CC00FF;
+		}
+	</style>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+</head>
+
+<body>
+	<div class="king">
+		<ul>
+			<li class="current">
+				<div class="small red1"></div>
+				<div class="big red2"></div>
+			</li>
+			<li>
+				<div class="small orange1"></div>
+				<div class="big orange2"></div>
+			</li>
+			<li>
+				<div class="small yellow1"></div>
+				<div class="big yellow2"></div>
+			</li>
+			<li>
+				<div class="small green1"></div>
+				<div class="big green2"></div>
+			</li>
+			<li>
+				<div class="small blue1"></div>
+				<div class="big blue2"></div>
+			</li>
+			<li>
+				<div class="small pink1"></div>
+				<div class="big pink2"></div>
+			</li>
+			<li>
+				<div class="small purple1"></div>
+				<div class="big purple2"></div>
+			</li>
+		</ul>
+	</div>
+	<script>
+		$(document).ready(function () {
+			$(".king li").mouseenter(function () {
+				$(this).stop().animate({
+					width: 224
+				}).find(".small").stop().fadeOut().siblings(".big").stop().fadeIn();
+				$(this).siblings("li").stop().animate({
+					width: 69
+				}).find(".small").stop().fadeIn().siblings(".big").stop().fadeOut();
+			});
+		});
+	</script>
+</body>
+
+</html>
