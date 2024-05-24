@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="outlook.css">
+    <link rel="stylesheet" href="outlook.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
 </head>
+
 <body>
-    <div class="block"></div>
-    <div class="block"></div>
-    <div class="block"></div>
-    <div class="block"></div>
-    <div class="block"></div>
+    <div class="center">
+        <ul>
+            <li>世界观</li>
+            <li>火罗国<br>及周边地区</li>
+            <li>隐族</li>
+            <li>日轮国</li>
+            <li>草原部落</li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("ul li:eq(0)").animate({
+                width: 380, height: 650, fontSize: 80
+            });
+        });
+        $("ul li").click(function () {
+            $(this).stop().animate({
+                width: 380, height: 650, fontSize: 80
+            }).click(function () {
+                alert("hello");
+            });
+            $(this).siblings("li").stop().animate({
+                width: 130, height: 250, fontSize: 36
+            });
+            // $(this).addClass("big");
+
+        });
+        // $("ul li.big").click(function () {
+        //     alert("hello");
+        // });
+        document.getElementsByClassName("big").onClick = function () {
+            alert("hello");
+        };
+    </script>
 </body>
+
 </html>
