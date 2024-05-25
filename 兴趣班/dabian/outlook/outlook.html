@@ -21,28 +21,51 @@
     </div>
     <script>
         $(document).ready(function () {
-            $("ul li:eq(0)").animate({
+            $("ul li:first").stop().animate({
                 width: 380, height: 650, fontSize: 80
             });
+            for (var i = 0; i < 2; i++) {
+                var lastLi = $("ul li:last");
+                lastLi.remove();
+                $("ul").prepend(lastLi);
+                bindClickEvent();
+            }
         });
-        $("ul li").click(function () {
-            $(this).stop().animate({
-                width: 380, height: 650, fontSize: 80
-            }).click(function () {
-                alert("hello");
+        function bindClickEvent() {
+            $("ul li").off("click").on("click", function () {
+                console.log($(this).index());
+                $(this).stop().animate({
+                    width: 380, height: 650, fontSize: 80,
+                });
+                $(this).css("background-image", "url(./img/big.png)")
+                $(this).siblings("li").stop().animate({
+                    width: 130, height: 250, fontSize: 36
+                });
+                $(this).siblings("li").css("background-image", "url(./img/normal.jpg)");
+                var index = $(this).index();
+                var times = index - 2;
+                if (times > 0) {
+                    for (var i = 0; i < times; i++) {
+                        var firstLi = $("ul li:first");
+                        firstLi.remove();
+                        $("ul").append(firstLi);
+                    }
+                } else {
+                    times = -times;
+                    for (var i = 0; i < times; i++) {
+                        var lastLi = $("ul li:last");
+                        lastLi.remove();
+                        $("ul").prepend(lastLi);
+                    }
+                }
+                // 重新绑定点击事件
+                bindClickEvent();
             });
-            $(this).siblings("li").stop().animate({
-                width: 130, height: 250, fontSize: 36
-            });
-            // $(this).addClass("big");
+        }
 
-        });
-        // $("ul li.big").click(function () {
-        //     alert("hello");
-        // });
-        document.getElementsByClassName("big").onClick = function () {
-            alert("hello");
-        };
+        // 初始绑定点击事件
+        bindClickEvent();
+
     </script>
 </body>
 
