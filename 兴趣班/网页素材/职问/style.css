@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    background-color: #232e30;
+    height: 62px;
+    width: 100%;
+}
+.title .top{
+    height: 62px;
+    width: 926px;
+    margin: 0 auto;
+}
+.title .top .logo{
+height: 62px;
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+.title .top .login{
+    height: 62px;
+    float: right;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+.title .top .login a{
+    color: #EEE;
+    text-decoration: none;
+}
+.title .top .login a:hover{
+    color: #FFF;
+}
+
+.box{
+    height: 680px;
+    width: 926px;
+    margin: 0 auto;
+}
+
+.box1{
+    background-color: #FFF;
+}
+.box1 .text{
+    color: #333;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.box1 .card{
+    height: 350px;
+    width: 300px;
+    float: left;
+    box-shadow: 4px 4px 4px rgb(87, 86, 86);
+}
+.box1 .card img{
+    width: 300px;
+    margin-bottom: 0;
+}
+.box1 .card .bar{
+    height: 5px;
+    width: 300px;
+    background-color: #6cf;
+    margin-top: 0;
+}
+.box1 .card .ttop{
+    text-align: center;
+    margin-top: 10px;
+    color:#6cf;
+    font-size: large;
+}
+.box1 .card .text{
+    text-align: center;
+    margin-top:10px;
+}
+.box1 .buttom{
+    border: #6cf 2px solid;
+    height: 40px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 490px;
+    
+}
+.box1 .buttom a{
+    color: #6cf;
+    text-decoration: none;
+}
+.box2img{
+    height: 680px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("./images/11.png");
+}
+.box2img .left{
+    height: 680px;
+    width: 500px;
+    float: left;
+}
+.box2img .left a{
+    color: #66ccff;
+    text-decoration: none;
+}
+.right{
+    height: 600px;
+    width: 500px;
+    float: right;
+}
+.box3 {
+    height: 600px;
+    width: 926px;
+    margin: 0 auto;
+}
+.bottom{
+    height: 320px;
+    background-color: #2c2e30;
+}
+.bottom .text{
+    height: 220px;
+    width: 926px;
+    margin: 0 auto;
+}
+.bottom .text .left{
+    height: 220px;
+    width: 463px;
+    float: left;
+}
+
+.bottom .text .right{
+    height: 220px;
+    width: 400px;
+    float: right;
+}

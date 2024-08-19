@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.one,
+		.two {
+			width: 50%;
+			height: 200px;
+			background-color: pink;
+			float: left;
+		}
+
+		.two {
+			background-color: yellow;
+		}
+
+		@media screen and (max-width: 800px) {
+
+			.one,
+			.two {
+				width: 100%;
+				height: 100px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="one"></div>
+	<div class="two"></div>
+</body>
+
+</html>
