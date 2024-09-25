@@ -371,3 +371,5 @@ FodyWeavers.xsd
 *.class
 vue.js
 .vscode/
+
+target/
