@@ -370,3 +370,4 @@ FodyWeavers.xsd
 *.exe
 *.class
 vue.js
+.vscode
